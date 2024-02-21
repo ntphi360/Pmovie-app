@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import {UserAuth} from '../context/AuthContext'
 import SearchBar from './SearchBar'
 import { ReactComponent as NetLogo } from '../Netflix-Logo.wine.svg'
+import pmovie from '../assets/img/pmovie.png'
 import  profile  from '../assets/img/profile.png'
 import { FiUser, FiEdit3 } from "react-icons/fi";
 
@@ -55,7 +56,8 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between h-[70px] p-2 md:p-2 lg:p-4 '>
       <div className='flex item-center'>            
-        <NetLogo onClick = {scrollToTop} className='cursor-pointer w-20 md:w-36 lg:ml-7 '/>  
+        {/* <NetLogo onClick = {scrollToTop} className='cursor-pointer w-20 md:w-36 lg:ml-7 '/>   */}
+        <img src={pmovie} onClick = {scrollToTop} className='cursor-pointer w-20 md:w-36 lg:ml-7'/>
         <div className='flex item-center p-2 ml-2 show-browse'>
           <div className='browse-menu relative'>
             <span className='text-white font-bold'>Browse</span>
