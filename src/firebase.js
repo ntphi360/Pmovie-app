@@ -12,12 +12,12 @@ import { getFirestore } from "firebase/firestore";
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2w9Sgt1jBg73jLChgAHcY9lpemM55mjw",
-  authDomain: "pmovie-db.firebaseapp.com",
-  projectId: "pmovie-db",
-  storageBucket: "pmovie-db.appspot.com",
-  messagingSenderId: "531187403305",
-  appId: "1:531187403305:web:5a2f2d1c40eeb904e2aa38"
+  apiKey: "AIzaSyCAaU7ETIVqM5xOPw8Zja4z5oJvIvA972c",
+  authDomain: "pmovie-db-1.firebaseapp.com",
+  projectId: "pmovie-db-1",
+  storageBucket: "pmovie-db-1.appspot.com",
+  messagingSenderId: "589958025599",
+  appId: "1:589958025599:web:f4129b36a4c97ed7220a4a"
 };
 
 export const app = initializeApp(firebaseConfig);

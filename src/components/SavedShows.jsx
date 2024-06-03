@@ -38,7 +38,9 @@ const SavedShows = (movie) => {
   };
 
   const handleClick=()=>{
-    navigate(`/${item?.id}`)
+    navigate(`/${item?.genre}/${item?.id}`)
+    
+    
   }
 
   return (
@@ -67,7 +69,7 @@ const SavedShows = (movie) => {
                     <div className="absolute block bottom-2 ">
                       <h5>{item?.title}</h5>
                       <div className='flex'>
-                        <p onClick={handleClick}><BiPlayCircle size='30'/></p>
+                        <p onClick={()=>{ navigate(`/${`my-list`}/${item?.id}`)}}><BiPlayCircle size='30'/></p>
                         <p onClick={() => deleteShow(item.id)} ><BiCheckCircle size='30'/></p>
                       </div>
                       <div className='flex items-center ml-1 bottom-0'>
